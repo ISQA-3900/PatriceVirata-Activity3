@@ -12,7 +12,6 @@ def display_title():
 # Get total points from input and repeat if input does not meet expected values.
 def get_totalPoints():
     totalPoints = 0.0
-    averageEarned = totalPoints
     while totalPoints == 0.0:
         try:
             totalPoints = int(input("Enter the total score (0-1000): "))
