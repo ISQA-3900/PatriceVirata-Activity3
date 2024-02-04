@@ -6,7 +6,7 @@ print("This program evaluates the letter grade for a class in a scale of 1000 po
 # Displays the title of the program
 def display_title():
     print("Welcome to the Grade Calculator")
-    print("")
+    print()
 
 
 # Get total points from input and repeat if input does not meet expected values.
@@ -19,12 +19,12 @@ def get_totalPoints():
             if totalPoints < 0 or totalPoints > 1000:
                 print("You must enter integer values >= 0 and <= 1000. Please try again.")
                 totalPoints = 0.0
-                print("")
+                print()
             else:
                 return totalPoints
         except ValueError:
             print("You must enter integer values >= 0 and <= 1000. Please try again.")
-            print("")
+            print()
 
 
 # Convert points into a letter grade
@@ -53,15 +53,15 @@ def main():
     display_title()
     averageEarned = get_totalPoints()
     get_letterGrade(averageEarned)
-    print("")
+    print()
     repeatAgain = str(input("Would you like to enter another score (y/n)? ").lower())
-    print("")
+    print()
     while repeatAgain == "y":
         averageEarned = get_totalPoints()
         get_letterGrade(averageEarned)
-        print("")
+        print()
         repeatAgain = str(input("Would you like to enter another score (y/n)? ").lower())
-        print("")
+        print()
     print("Thank you")
 
 
